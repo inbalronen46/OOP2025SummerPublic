@@ -1,0 +1,414 @@
+[32mStarting 'testGivenParameters' [0m
+Bank Simulation		 (all periods in minutes)
+	Length of work day:     4 hours)
+	Number of tellers:      2
+	Teller idle period:     10.0 +/- 5.0
+	Customer arrival rate:  2.0 +/- 10.0
+	Customer service time:  10.0 +/- 30.0
+	Queue sampling rate :   every 30
+
+++++ Clock         0 has started.
+++++ Teller        1 has started on thread Thread[Thread-2,5,main].
+++++ Teller        2 has started on thread Thread[Thread-3,5,main].
+++++ Customer      1 has started on thread 1.
+++++ Customer      2 has started on thread 2.
+---- Customer      1 has completed.
+++++ Customer      3 has started on thread 3.
+---- Customer      3 has completed.
+Sample:  [] customers are waiting.
+Sample: Teller 1 is active
+Sample: Teller 2 is active, currently serving customer 2
+
+++++ Customer      4 has started on thread 4.
+++++ Customer      5 has started on thread 5.
+++++ Customer      6 has started on thread 6.
+++++ Customer      7 has started on thread 7.
+++++ Customer      8 has started on thread 8.
+Sample:  [5, 6, 7, 8] customers are waiting.
+Sample: Teller 1 is active, currently serving customer 4
+Sample: Teller 2 is active, currently serving customer 2
+
+++++ Customer      9 has started on thread 9.
+++++ Customer     10 has started on thread 10.
+++++ Customer     11 has started on thread 11.
+Sample:  [5, 6, 7, 8, 9, 10, 11] customers are waiting.
+Sample: Teller 1 is active, currently serving customer 4
+Sample: Teller 2 is active, currently serving customer 2
+
+---- Customer      2 has completed.
+---- Customer      4 has completed.
+++++ Customer     12 has started on thread 12.
+++++ Customer     13 has started on thread 13.
+++++ Customer     14 has started on thread 14.
+Sample:  [7, 8, 9, 10, 11, 12, 13, 14] customers are waiting.
+Sample: Teller 1 is active, currently serving customer 6
+Sample: Teller 2 is active, currently serving customer 5
+
+---- Customer      6 has completed.
+---- Customer      5 has completed.
+++++ Customer     15 has started on thread 15.
+---- Customer      7 has completed.
+++++ Customer     16 has started on thread 16.
+++++ Customer     17 has started on thread 17.
+Sample:  [10, 11, 12, 13, 14, 15, 16, 17] customers are waiting.
+Sample: Teller 1 is active, currently serving customer 9
+Sample: Teller 2 is active, currently serving customer 8
+
+---- Customer      9 has completed.
+++++ Customer     18 has started on thread 18.
+++++ Customer     19 has started on thread 19.
+++++ Customer     20 has started on thread 20.
+---- Customer      8 has completed.
+Sample:  [12, 13, 14, 15, 16, 17, 18, 19, 20] customers are waiting.
+Sample: Teller 1 is active, currently serving customer 10
+Sample: Teller 2 is active, currently serving customer 11
+
+++++ Customer     21 has started on thread 21.
+++++ Customer     22 has started on thread 22.
+++++ Customer     23 has started on thread 23.
+---- Customer     10 has completed.
+++++ Customer     24 has started on thread 24.
+---- Customer     12 has completed.
+++++ Customer     25 has started on thread 25.
+Sample:  [14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25] customers are waiting.
+Sample: Teller 1 is active, currently serving customer 13
+Sample: Teller 2 is active, currently serving customer 11
+
+++++ Customer     26 has started on thread 26.
+---- Customer     11 has completed.
+---- Customer     13 has completed.
+++++ Customer     27 has started on thread 27.
+---- Customer     14 has completed.
+---- Clock         0 workday ended..
+Sample:  [17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27] customers are waiting.
+Sample: Teller 1 is active, currently serving customer 15
+Sample: Teller 2 is active, currently serving customer 16
+
+---- Customer     16 has completed.
+---- Customer     15 has completed.
+Sample:  [19, 20, 21, 22, 23, 24, 25, 26, 27] customers are waiting.
+Sample: Teller 1 is active, currently serving customer 18
+Sample: Teller 2 is active, currently serving customer 17
+
+---- Customer     18 has completed.
+---- Customer     17 has completed.
+Sample:  [21, 22, 23, 24, 25, 26, 27] customers are waiting.
+Sample: Teller 1 is active, currently serving customer 19
+Sample: Teller 2 is active, currently serving customer 20
+
+---- Customer     19 has completed.
+---- Customer     20 has completed.
+Sample:  [23, 24, 25, 26, 27] customers are waiting.
+Sample: Teller 1 is active, currently serving customer 21
+Sample: Teller 2 is active, currently serving customer 22
+
+---- Customer     21 has completed.
+---- Customer     22 has completed.
+---- Customer     24 has completed.
+Sample:  [26, 27] customers are waiting.
+Sample: Teller 1 is active, currently serving customer 23
+Sample: Teller 2 is active, currently serving customer 25
+
+---- Customer     23 has completed.
+---- Customer     25 has completed.
+---- Teller        1 has completed.
+Sample:  [] customers are waiting.
+Sample: Teller 1 is idle
+Sample: Teller 2 is active, currently serving customer 27
+
+---- Customer     26 has completed.
+---- Teller        1 served 15 customers.
+Sample:  [] customers are waiting.
+Sample: Teller 2 is active, currently serving customer 27
+
+---- Teller        2 has completed.
+---- Customer     27 has completed.
+---- Teller        2 served 12 customers.
+Sample:  [] customers are waiting.
+
+The number of samples is 15
+[32mStarting 'testOtherParameters' [0m
+Bank Simulation		 (all periods in minutes)
+	Length of work day:     3 hours)
+	Number of tellers:      5
+	Teller idle period:     15.0 +/- 5.0
+	Customer arrival rate:  2.0 +/- 5.0
+	Customer service time:  10.0 +/- 30.0
+	Queue sampling rate :   every 30
+
+++++ Clock         0 has started.
+++++ Teller        2 has started on thread Thread[Thread-35,5,main].
+++++ Teller        3 has started on thread Thread[Thread-36,5,main].
+++++ Teller        1 has started on thread Thread[Thread-34,5,main].
+++++ Teller        4 has started on thread Thread[Thread-37,5,main].
+++++ Teller        5 has started on thread Thread[Thread-38,5,main].
+++++ Customer     28 has started on thread 28.
+++++ Customer     29 has started on thread 29.
+---- Customer     28 has completed.
+++++ Customer     30 has started on thread 30.
+---- Customer     30 has completed.
+++++ Customer     31 has started on thread 31.
+++++ Customer     32 has started on thread 32.
+Sample:  [] customers are waiting.
+Sample: Teller 1 is active
+Sample: Teller 3 is active, currently serving customer 32
+Sample: Teller 2 is active, currently serving customer 31
+Sample: Teller 5 is active, currently serving customer 29
+Sample: Teller 4 is active
+
+---- Customer     29 has completed.
+---- Customer     31 has completed.
+++++ Customer     33 has started on thread 33.
+---- Customer     32 has completed.
+++++ Customer     34 has started on thread 34.
+++++ Customer     35 has started on thread 35.
+---- Customer     35 has completed.
+++++ Customer     36 has started on thread 36.
+---- Customer     36 has completed.
+Sample:  [] customers are waiting.
+Sample: Teller 1 is active
+Sample: Teller 3 is active
+Sample: Teller 2 is active, currently serving customer 34
+Sample: Teller 5 is active
+Sample: Teller 4 is active, currently serving customer 33
+
+++++ Customer     37 has started on thread 37.
+++++ Customer     38 has started on thread 38.
+---- Customer     33 has completed.
+++++ Customer     39 has started on thread 39.
+++++ Customer     40 has started on thread 40.
+Sample:  [] customers are waiting.
+Sample: Teller 1 is active, currently serving customer 39
+Sample: Teller 3 is active, currently serving customer 37
+Sample: Teller 2 is active, currently serving customer 34
+Sample: Teller 5 is active, currently serving customer 38
+Sample: Teller 4 is active, currently serving customer 40
+
+++++ Customer     41 has started on thread 41.
+++++ Customer     42 has started on thread 42.
+---- Customer     38 has completed.
+++++ Customer     43 has started on thread 43.
+---- Customer     34 has completed.
+++++ Customer     44 has started on thread 44.
+++++ Customer     45 has started on thread 45.
+++++ Customer     46 has started on thread 46.
+---- Customer     39 has completed.
+++++ Customer     47 has started on thread 47.
+---- Customer     37 has completed.
+---- Customer     41 has completed.
+++++ Customer     48 has started on thread 48.
+Sample:  [46, 47, 48] customers are waiting.
+Sample: Teller 1 is active, currently serving customer 43
+Sample: Teller 3 is active, currently serving customer 44
+Sample: Teller 2 is active, currently serving customer 42
+Sample: Teller 5 is active, currently serving customer 45
+Sample: Teller 4 is active, currently serving customer 40
+
+---- Customer     44 has completed.
+---- Customer     43 has completed.
+++++ Customer     49 has started on thread 49.
+---- Customer     40 has completed.
+---- Customer     45 has completed.
+++++ Customer     50 has started on thread 50.
+++++ Customer     51 has started on thread 51.
+---- Customer     48 has completed.
+++++ Customer     52 has started on thread 52.
+---- Customer     42 has completed.
+---- Customer     47 has completed.
+Sample:  [] customers are waiting.
+Sample: Teller 1 is active, currently serving customer 52
+Sample: Teller 3 is active, currently serving customer 46
+Sample: Teller 2 is active, currently serving customer 51
+Sample: Teller 5 is active, currently serving customer 49
+Sample: Teller 4 is active, currently serving customer 50
+
+++++ Customer     53 has started on thread 53.
+++++ Customer     54 has started on thread 54.
+---- Customer     46 has completed.
+++++ Customer     55 has started on thread 55.
+---- Customer     51 has completed.
+++++ Customer     56 has started on thread 56.
+---- Customer     49 has completed.
+---- Customer     54 has completed.
+++++ Customer     57 has started on thread 57.
+++++ Customer     58 has started on thread 58.
+++++ Customer     59 has started on thread 59.
+---- Customer     56 has completed.
+++++ Customer     60 has started on thread 60.
+---- Customer     55 has completed.
+Sample:  [59, 60] customers are waiting.
+Sample: Teller 1 is active, currently serving customer 52
+Sample: Teller 3 is active, currently serving customer 53
+Sample: Teller 2 is active, currently serving customer 57
+Sample: Teller 5 is active, currently serving customer 58
+Sample: Teller 4 is active, currently serving customer 50
+
+++++ Customer     61 has started on thread 61.
+---- Customer     57 has completed.
+---- Customer     52 has completed.
+++++ Customer     62 has started on thread 62.
+++++ Customer     63 has started on thread 63.
+---- Customer     50 has completed.
+++++ Customer     64 has started on thread 64.
+++++ Customer     65 has started on thread 65.
+---- Customer     53 has completed.
+---- Clock         0 workday ended..
+Sample:  [63, 64, 65] customers are waiting.
+Sample: Teller 1 is active, currently serving customer 60
+Sample: Teller 3 is active, currently serving customer 62
+Sample: Teller 2 is active, currently serving customer 59
+Sample: Teller 5 is active, currently serving customer 58
+Sample: Teller 4 is active, currently serving customer 61
+
+---- Customer     59 has completed.
+---- Customer     61 has completed.
+---- Customer     60 has completed.
+Sample:  [] customers are waiting.
+Sample: Teller 1 is active, currently serving customer 65
+Sample: Teller 3 is active, currently serving customer 62
+Sample: Teller 2 is active, currently serving customer 63
+Sample: Teller 5 is active, currently serving customer 58
+Sample: Teller 4 is active, currently serving customer 64
+
+---- Teller        3 has completed.
+---- Customer     62 has completed.
+---- Teller        3 served 8 customers.
+---- Customer     58 has completed.
+---- Teller        5 has completed.
+---- Teller        5 served 8 customers.
+---- Customer     64 has completed.
+---- Teller        4 has completed.
+---- Teller        4 served 6 customers.
+---- Customer     65 has completed.
+---- Teller        1 has completed.
+---- Teller        1 served 6 customers.
+Sample:  [] customers are waiting.
+Sample: Teller 2 is active, currently serving customer 63
+
+---- Teller        2 has completed.
+---- Customer     63 has completed.
+---- Teller        2 served 10 customers.
+Sample:  [] customers are waiting.
+
+The number of samples is 10
+[32mStarting 'testNoCustomers' [0m
+Bank Simulation		 (all periods in minutes)
+	Length of work day:     1 hours)
+	Number of tellers:      5
+	Teller idle period:     5.0 +/- 1.0
+	Customer arrival rate:  300.0 +/- 0.0
+	Customer service time:  2.0 +/- 1.0
+	Queue sampling rate :   every 30
+
+++++ Clock         0 has started.
+++++ Teller        3 has started on thread Thread[Thread-82,5,main].
+++++ Teller        4 has started on thread Thread[Thread-83,5,main].
+++++ Teller        5 has started on thread Thread[Thread-84,5,main].
+++++ Teller        1 has started on thread Thread[Thread-80,5,main].
+++++ Teller        2 has started on thread Thread[Thread-81,5,main].
+Sample:  [] customers are waiting.
+Sample: Teller 2 is active
+Sample: Teller 3 is active
+Sample: Teller 1 is active
+Sample: Teller 5 is active
+Sample: Teller 4 is active
+
+---- Clock         0 workday ended..
+Sample:  [] customers are waiting.
+Sample: Teller 2 is active
+Sample: Teller 3 is active
+Sample: Teller 1 is active
+Sample: Teller 5 is active
+Sample: Teller 4 is active
+
+Sample:  [] customers are waiting.
+Sample: Teller 2 is active
+Sample: Teller 3 is active
+Sample: Teller 1 is active
+Sample: Teller 5 is active
+Sample: Teller 4 is active
+
+Sample:  [] customers are waiting.
+Sample: Teller 2 is active
+Sample: Teller 3 is active
+Sample: Teller 1 is active
+Sample: Teller 5 is active
+Sample: Teller 4 is active
+
+Sample:  [] customers are waiting.
+Sample: Teller 2 is active
+Sample: Teller 3 is active
+Sample: Teller 1 is active
+Sample: Teller 5 is active
+Sample: Teller 4 is active
+
+Sample:  [] customers are waiting.
+Sample: Teller 2 is active
+Sample: Teller 3 is active
+Sample: Teller 1 is active
+Sample: Teller 5 is active
+Sample: Teller 4 is active
+
+Sample:  [] customers are waiting.
+Sample: Teller 2 is active
+Sample: Teller 3 is active
+Sample: Teller 1 is active
+Sample: Teller 5 is active
+Sample: Teller 4 is active
+
+Sample:  [] customers are waiting.
+Sample: Teller 2 is active
+Sample: Teller 3 is active
+Sample: Teller 1 is active
+Sample: Teller 5 is active
+Sample: Teller 4 is active
+
+Sample:  [] customers are waiting.
+Sample: Teller 2 is active
+Sample: Teller 3 is active
+Sample: Teller 1 is active
+Sample: Teller 5 is active
+Sample: Teller 4 is active
+
+---- Teller        5 has completed.
+---- Teller        1 has completed.
+---- Teller        2 has completed.
+---- Teller        1 served 0 customers.
+---- Teller        2 served 0 customers.
+---- Teller        4 has completed.
+---- Teller        3 has completed.
+---- Teller        5 served 0 customers.
+---- Teller        4 served 0 customers.
+---- Teller        3 served 0 customers.
+Sample:  [] customers are waiting.
+
+The number of samples is 10
+[32mStarting 'testShortDay' [0m
+Bank Simulation		 (all periods in minutes)
+	Length of work day:     0 hours)
+	Number of tellers:      5
+	Teller idle period:     15.0 +/- 5.0
+	Customer arrival rate:  10.0 +/- 5.0
+	Customer service time:  10.0 +/- 30.0
+	Queue sampling rate :   every 30
+
+++++ Clock         0 has started.
+---- Clock         0 workday ended..
+++++ Teller        5 has started on thread Thread[Thread-92,5,main].
+++++ Teller        4 has started on thread Thread[Thread-91,5,main].
+++++ Teller        2 has started on thread Thread[Thread-89,5,main].
+++++ Teller        1 has started on thread Thread[Thread-88,5,main].
+---- Teller        4 has completed.
+++++ Teller        3 has started on thread Thread[Thread-90,5,main].
+---- Teller        5 has completed.
+---- Teller        1 has completed.
+---- Teller        3 has completed.
+---- Teller        3 served 0 customers.
+---- Teller        1 served 0 customers.
+---- Teller        5 served 0 customers.
+---- Teller        2 has completed.
+---- Teller        2 served 0 customers.
+---- Teller        4 served 0 customers.
+Sample:  [] customers are waiting.
+
+The number of samples is 1
